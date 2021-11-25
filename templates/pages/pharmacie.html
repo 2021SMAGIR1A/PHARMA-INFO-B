@@ -1,0 +1,53 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="slider_section doctor_section layout_padding">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container ">
+            <div class="heading_container heading_center">
+              <h2>
+                PHARMACIE DE GARDE 
+                <p>{{first.com|upper}}</p>
+              </h2>
+              <p class="col-md-10 mx-auto px-0">
+                DU {{first.gar.gar_dated}} AU {{first.gar.gar_datef}}
+              </p>
+              <p><a href="#" class="btn btn-primary btn-outline"> <i class="fa fa-map-marker"></i>  Pharmacie la plus proche</a></p>
+            </div>
+            <div class="row">
+                {% for ph in pharmacie %}
+                <div class="col-sm-4 col-lg-2 mx-auto">
+                    <div class="box">
+                    <div class="img-box">
+                        <img src="{% static 'images/ph3.jpg' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <div class="social_box">
+                        <a href="" style="font-size: 11px;">
+                            {{ph.ph_adresse}}
+                        </a>
+                        
+                        </div>
+                        <h5 style="font-size: 13px;">
+                        PHARMACIE
+                        </h5>
+                        <h6 class="" style="font-size: 12px; font-weight: 100;">
+                            {{ph.ph_nom|upper}}
+                        </h6>
+                    </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+{% endblock content %}
