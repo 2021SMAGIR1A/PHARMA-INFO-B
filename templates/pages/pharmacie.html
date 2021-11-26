@@ -15,7 +15,7 @@
               <p class="col-md-10 mx-auto px-0">
                 DU {{first.gar.gar_dated}} AU {{first.gar.gar_datef}}
               </p>
-              <p><a href="#" class="btn btn-primary btn-outline"> <i class="fa fa-map-marker"></i>  Pharmacie la plus proche</a></p>
+              <p><a href="{% url 'mapjs' %}" class="btn btn-primary btn-outline" id="btnProche"> <i class="fa fa-map-marker"></i>  Pharmacie la plus proche</a></p>
             </div>
             <div class="row">
                 {% for ph in pharmacie %}

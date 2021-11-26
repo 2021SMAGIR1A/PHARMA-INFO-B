@@ -31,5 +31,7 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('datasave/', views.saveData, name="data"),
     path('login/', views.login, name="login"),
+    path('mapjs/', views.getMapPharma, name="mapjs"),
+    path('mePos/', views.mapjs, name="mepos"),
     path('pharmacie/getComPharma/', views.getPharmaCom, name="getPharma"),
 ]
