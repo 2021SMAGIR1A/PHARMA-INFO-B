@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'PharmacieGarde.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_pharmacie',
+        'NAME': 'dbgrp6',
         'HOST': 'localhost',
-        'USER': 'Cristiam',
-        'PASSWORD': 'crist123',
+        'USER': 'dbusergrp6',
+        'PASSWORD': 'dbsecret6',
     }
 }
 
