@@ -25,7 +25,7 @@ SECRET_KEY = '8vqhagfori$m713nw^ka^*e=0@+$3^ub%w51q&er#@=$pxcxjp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.srvc.mooc-foad.com/grp6', 'srvc.mooc-foad.com/grp6']
+ALLOWED_HOSTS = ['www.pharmaciegarde.herokuapp.com', 'pharmaciegarde.herokuapp.com']
 
 
 # Application definition
