@@ -126,7 +126,7 @@ def getMapPharma(request):
         if numPharma == ville.ph_nom:
             if type(latLng2) == dict:
                 coordinates = [thisCoord, [latLng2['lat'], latLng2['lng']]]
-                folium.Marker(coordinates[1], icon=folium.Icon(color='green'), popup=f'<b>{ latLng2["address"] }</b><br>{ (latLng2["lat"], latLng2["lng"]) }', tooltip=latLng2["address"]).add_to(m)
+                folium.Marker(coordinates[1], icon=folium.Icon(color='green'), popup=f'<b>{ latLng2["address"] }</b><br>{ (latLng2["lat"], latLng2["lng"]) }', tooltip=f'Pharmacie la plus proche <b> {ville.ph_nom} </b>').add_to(m)
             else:
                 coordinates = [thisCoord, latLng2.latlng]
                 folium.Marker(coordinates[1], icon=folium.Icon(color='green'), popup=f'<b>{ latLng2.address }</b><br>{ latLng2.latlng }', tooltip=latLng2.address).add_to(m)
@@ -167,7 +167,7 @@ def getMapPharma(request):
     #           .add_to(m)
 
     folium.Marker(coordinates[0],icon=folium.Icon(color='red'),
-     popup=f'<b>Your location</b><br>Latitude: {thisCoord[0]} <br>Longitude: {thisCoord[1]} ', tooltip="Me").add_to(m)
+     popup=f'<b>Ma localisataion</b><br>Latitude: {thisCoord[0]} <br>Longitude: {thisCoord[1]} ', tooltip="Ma position").add_to(m)
 
     # folium.PolyLine([[latLng2['lat'], latLng2['lng']],thisCoord],tooltip = "itinéraire Rennes-Grenoble").add_to(m)
 
