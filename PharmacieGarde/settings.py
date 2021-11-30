@@ -25,7 +25,7 @@ SECRET_KEY = '8vqhagfori$m713nw^ka^*e=0@+$3^ub%w51q&er#@=$pxcxjp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.pharmaciegarde.herokuapp.com', 'pharmaciegarde.herokuapp.com']
 
 
 # Application definition
@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'PharmacieGarde.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_pharmacie',
+        'NAME': 'dbgrp6',
         'HOST': 'localhost',
-        'USER': 'Cristiam',
-        'PASSWORD': 'crist123',
+        'USER': 'dbusergrp6',
+        'PASSWORD': 'dbsecret6',
     }
 }
 
